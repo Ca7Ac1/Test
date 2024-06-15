@@ -1,2 +1,27 @@
-Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: Pillow in /home/ca7ac1/.local/lib/python3.10/site-packages (9.4.0)
+Traceback (most recent call last):
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/xauth.py", line 43, in __init__
+    raw = open(filename, 'rb').read()
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ca7ac1/.Xauthority'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ca7ac1/Workspace/Test/a.py", line 3, in <module>
+    import pyautogui
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/pyautogui/__init__.py", line 246, in <module>
+    import mouseinfo
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/mouseinfo/__init__.py", line 223, in <module>
+    _display = Display(os.environ['DISPLAY'])
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/display.py", line 80, in __init__
+    self.display = _BaseDisplay(display)
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/display.py", line 62, in __init__
+    display.Display.__init__(*(self, ) + args, **keys)
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/protocol/display.py", line 60, in __init__
+    auth_name, auth_data = connect.get_auth(self.socket,
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/support/connect.py", line 91, in get_auth
+    return mod.get_auth(sock, dname, host, dno)
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/support/unix_connect.py", line 103, in new_get_auth
+    au = xauth.Xauthority()
+  File "/home/ca7ac1/.local/lib/python3.10/site-packages/Xlib/xauth.py", line 45, in __init__
+    raise error.XauthError('~/.Xauthority: %s' % err)
+Xlib.error.XauthError: ~/.Xauthority: [Errno 2] No such file or directory: '/home/ca7ac1/.Xauthority'
