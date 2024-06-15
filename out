@@ -1,4 +1,2 @@
-Traceback (most recent call last):
-  File "/home/ca7ac1/Workspace/Test/a.py", line 2, in <module>
-    import cv2
-ModuleNotFoundError: No module named 'cv2'
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: Pillow in /home/ca7ac1/.local/lib/python3.10/site-packages (9.4.0)
