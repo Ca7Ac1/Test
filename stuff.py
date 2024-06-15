@@ -6,6 +6,4 @@
  import cv2
  import pyautogui
 
- image = pyautogui.screenshot()
-
  image1 = pyautogui.screenshot("image1.png")
